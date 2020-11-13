@@ -1,0 +1,306 @@
+/*
+COLORS:
+brick: #dc5539
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Mulish', sans-serif;
+	background-image: linear-gradient( 
+		rgba(0, 0, 0, 0.7), 
+		rgba(0, 0, 0, 0.7)), 
+	url(../img/oakland-skyline.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+/************************************************************
+HEADER
+*************************************************************/
+.header {
+	height: 100vh;
+}
+
+.text-box {
+	position: relative;
+	top: 10%;
+	margin: 0 auto;
+	width: 100%;
+	text-align: center;
+}
+
+.heading-primary {
+	color: #fff;
+}
+
+.heading-primary-main {
+	font-size: 8rem;
+	font-weight: 100;
+	font-family: 'Cedarville Cursive', monospace;
+}
+
+#circle {
+	position: absolute;
+	right: 10vw;
+	height: 250px;
+}
+
+/************************************************************
+NAV
+*************************************************************/
+.main-nav {
+	display: flex;
+	flex-direction: row;
+  align-items: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 9%;
+	background-color: rgba(50, 50, 50, 0.9);
+	box-shadow: 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	z-index: 1;
+	min-height: 60px;
+}
+
+.main-nav li {
+	margin: 0 2%;
+	list-style: none;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Cedarville Cursive', monospace;
+	font-size: 2.8rem;
+	transition: font-size 0.2s ease-in-out;
+}
+
+.main-nav li a:hover {
+	color: #dc5539;
+	font-size: 3.2rem;
+}
+
+/************************************************************
+MAIN ELEMENTS AND CLASSES
+*************************************************************/
+section {
+	margin: 0 auto;
+	height: 100vh;
+	width: 100vw;
+} 
+
+h2 { 
+	color: #dc5539;
+	font-family: 'Cedarville Cursive', monospace;
+	font-size: 4.8rem;
+}
+
+.section-body {
+	top: 25%;
+	width: 100%;
+}
+
+h3 { 
+	font-size: 2.8rem;
+	color: #fff;
+	margin: 0 auto;
+}
+
+footer {
+	width: 100vw;
+	height: 11%;
+	bottom: 0;
+	background-color: rgba(220, 85, 57, 0.7);
+}
+
+footer a {
+	display: inline-block;
+	margin: 1% 3%;
+	text-decoration: none;
+	color: #bbb; 
+	font-size: 1.9rem;
+}
+
+/************************************************************
+PROJECTS SECTION
+*************************************************************/
+.project-list {
+	margin: 0 auto;
+	list-style: none;
+}
+
+.project-list li {
+	margin: 3% auto;
+}
+
+.project-list li a:link, 
+.project-list li a:visited {
+	text-decoration: none;
+	color: #bbb; 
+	font-size: 1.9rem;
+	transition: font-size 0.2s ease-in-out;
+}
+
+.project-list li a:hover {
+	color: #dc5539;
+	font-size: 2.2rem;
+}
+
+.project-list p {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+
+/************************************************************
+EDUCATION SECTION
+*************************************************************/
+.edu {
+	margin: 1% auto;
+}
+
+.edu h3 {
+	font-size: 2.4rem;
+}
+
+.edu-list {
+	margin: 0 auto;
+	color: #bbb; 
+	font-size: 1.9rem;
+	list-style: none;
+}
+
+.scroll-container {
+	position: relative;
+	height: 80vh;
+	padding-bottom: 5%;
+	overflow: scroll;
+	-ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/*Chrome, Safari and Opera */
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+/************************************************************
+SKILLS SECTION
+*************************************************************/
+.section-box #skills {
+	font-size: 2.4rem;
+	margin: 2% auto;
+}
+
+.skills-list {
+	color: #fff; 
+	font-size: 3.2rem;
+	list-style: none;
+}
+
+/************************************************************
+INTERESTS SECTION
+*************************************************************/
+.interests {
+	font-size: 2.4rem;
+	/*margin-bottom: 5%;*/
+}
+
+.interests-list {
+	list-style: none;
+}
+
+.interests-list li {
+	display: inline-block;
+	margin: 2%;
+}
+
+.interests-list li a:link,
+.interests-list li a:visited {
+	text-decoration: none;
+	color: #bbb; 
+	font-size: 1.9rem;
+	transition: font-size 0.2s ease-in-out;
+}
+
+.interests-list li a:hover {
+	color: #dc5539;
+	font-size: 2.2rem;
+}
+
+.art-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	list-style-type: none;
+	color: #bbb; 
+	font-size: 1.9rem;
+}
+
+/*
+img {
+	height: 200px;
+	box-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+	border-radius: 1%;
+	transition: transform 0.4s ease-in-out;
+}
+
+
+img:hover {
+	transform: scale(1.2);
+}
+*/
+
+figure {
+	margin: 2%;
+}
+
+figure span, h4 {
+	display: none;
+}
+
+/************************************************************
+MEDIA QUERIES
+************************************************************/
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
+
+
+
+
+
+
+
+
+
+
